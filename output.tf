@@ -3,14 +3,9 @@ output "service_plan_id" {
   value       = azurerm_service_plan.plan.id
 }
 
-output "service_plan_name" {
-  description = "Name of the created App Service Plan"
-  value       = azurerm_service_plan.plan.name
-}
-
-output "service_plan_location" {
-  description = "Azure location of the created App Service Plan"
-  value       = azurerm_service_plan.plan.location
+output "service_plan_is_reserved" {
+  description = "If the instance is reserved"
+  value       = azurerm_service_plan.plan.reserved
 }
 
 output "service_plan_kind" {
@@ -18,7 +13,12 @@ output "service_plan_kind" {
   value       = azurerm_service_plan.plan.kind
 }
 
-output "service_plan_is_reserved" {
-  description = "If the instance is reserved"
-  value       = azurerm_service_plan.plan.reserved
+output "service_plan_location" {
+  description = "Azure location of the created App Service Plan"
+  value       = azurerm_service_plan.plan.location
+}
+
+output "service_plan_name" {
+  description = "Name of the created App Service Plan"
+  value       = azurerm_service_plan.plan.name
 }
