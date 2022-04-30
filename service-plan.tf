@@ -3,7 +3,7 @@ resource "azurerm_service_plan" "plan" {
 
   location                     = var.location
   resource_group_name          = var.rg_name
-  app_service_environment_id   = var.add_to_app_service_environment ? var.app_service_environment_id : false
+  app_service_environment_id   = var.add_to_app_service_environment ? var.app_service_environment_id : ""
   maximum_elastic_worker_count = var.maximum_elastic_worker_count
   zone_balancing_enabled       = var.zone_balancing_enabled
 
