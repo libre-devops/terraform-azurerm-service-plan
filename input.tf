@@ -58,5 +58,5 @@ variable "zone_balancing_enabled" {
 
 variable "sku_name" {
   description = "A new SKU name"
-  type        = map(string)
+  type        = string
 }
